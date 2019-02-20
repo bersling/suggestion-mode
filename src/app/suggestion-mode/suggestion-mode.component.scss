@@ -1,0 +1,33 @@
+:host {
+  ::ng-deep {
+    white-space: pre-wrap;
+    color: rgb(39, 39, 39);
+  }
+}
+
+[contenteditable] {
+  border-radius: 5px;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #eeee;
+  font-size: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+
+$col: rgb(47, 119, 252);
+
+::ng-deep {
+  .removed {
+    text-decoration: line-through underline;
+    color: lighten($col, 30%);
+    font-size: 80%;
+  }
+  .added {
+    text-decoration: underline;
+    font-weight: bold;
+    color: $col;
+  }
+}
