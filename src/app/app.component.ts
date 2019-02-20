@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'suggestion-mode';
+  
+  doSomething(someArg): boolean {
+    if (someArg) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
 }

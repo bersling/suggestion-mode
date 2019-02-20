@@ -28,4 +28,11 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to suggestion-mode!');
   });
+
+  it(`should doSomething`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.debugElement.componentInstance;
+    expect(component.doSomething('hello')).toBeTruthy();
+//    expect(component.doSomething(0)).toBeFalsy();
+  });
 });
